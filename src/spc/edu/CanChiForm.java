@@ -1,14 +1,16 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package spc.edu;
+
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author SPC
  */
-public class CanChiForm extends javax.swing.JPanel {
+public class CanChiForm extends javax.swing.JFrame {
 
     /**
      * Creates new form CanChiForm
@@ -26,80 +28,189 @@ public class CanChiForm extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        laYear = new javax.swing.JLabel();
-        txtYear = new javax.swing.JTextField();
-        lbKQ = new javax.swing.JLabel();
-        txtKq = new javax.swing.JTextField();
+        lbSoTien = new javax.swing.JLabel();
+        txtSoTien = new javax.swing.JTextField();
+        lbThoiHan = new javax.swing.JLabel();
+        txtThoiHan = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        lbLaiSuat = new javax.swing.JLabel();
+        txtLaiSuat = new javax.swing.JTextField();
+        lbKetQua = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        ListData = new javax.swing.JList<>();
         btTinh = new javax.swing.JButton();
 
-        laYear.setText("Năm ");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lbKQ.setText("Kết Quả ");
+        lbSoTien.setText("Số Tiền: ");
 
-        btTinh.setText("Tính ");
+        lbThoiHan.setText("Thời Hạn ");
+
+        lbLaiSuat.setText("Lãi Suất ");
+
+        lbKetQua.setText("Kết Quả");
+
+        ListData.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(ListData);
+
+        btTinh.setText("Tính");
         btTinh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btTinhActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(lbSoTien)
+                                .addComponent(lbThoiHan))
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel1)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                            .addComponent(lbLaiSuat)
+                            .addGap(29, 29, 29)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lbKQ)
-                            .addComponent(laYear))
-                        .addGap(37, 37, 37)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtYear, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtKq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(159, 159, 159)
-                        .addComponent(btTinh)))
-                .addContainerGap(76, Short.MAX_VALUE))
+                        .addComponent(lbKetQua)
+                        .addGap(37, 37, 37)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtSoTien)
+                    .addComponent(txtThoiHan)
+                    .addComponent(txtLaiSuat, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
+                    .addComponent(jScrollPane1))
+                .addGap(40, 40, 40)
+                .addComponent(btTinh)
+                .addContainerGap(68, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(laYear)
-                    .addComponent(txtYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(73, 73, 73)
+                    .addComponent(lbSoTien)
+                    .addComponent(txtSoTien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lbThoiHan)
+                    .addComponent(txtThoiHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbKQ)
-                    .addComponent(txtKq, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                .addComponent(btTinh)
-                .addGap(73, 73, 73))
+                    .addComponent(lbLaiSuat)
+                    .addComponent(txtLaiSuat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lbKetQua)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btTinh))
+                        .addGap(0, 20, Short.MAX_VALUE))))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btTinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTinhActionPerformed
         // TODO add your handling code here:
+        double SoTien, LaiSuat , lai;
+        int ThoiHan;
+       
         
-        int year = Integer.parseInt(txtYear.getText());
+        try{
+             SoTien = Double.parseDouble(txtSoTien.getText());
+             LaiSuat = Double.parseDouble(txtLaiSuat.getText());
+             ThoiHan = Integer.parseInt(txtThoiHan.getText());
+            
+        }catch(Exception e){
+           JOptionPane.showMessageDialog(null, "Enter a valid Number");
+                return;                   
+        } 
+        int SoNam = 2024 + ThoiHan;
+        String listdata[] = new String[SoNam + 1];
+        for(int i = 1; i < ThoiHan; i++){
+            lai = LaiSuat * SoTien;
+           listdata[i] = SoNam + ":" + "SoTien: " + SoTien + "Lãi: " + lai ;
+           SoTien = SoTien + lai;
+               
+
+        }
+        ListData.setListData(listdata);
+         
+            
+            
         
-         String can [] = {"canh","tan", "nham","quy", "giap", "at", "binh", "dinh", "mau", "ky"};
-        String Chi [] = {"than", "dau", "tuat", "hoi","ty","suu", "dan", "mao", "thin", "ti","ngo","mui"};
+        }
+          
+       
+         
         
-         String CN = can[year % 10];
-        String chi = Chi[year % 12];
         
-        txtKq.setText(CN + chi);
+        
+       
     }//GEN-LAST:event_btTinhActionPerformed
 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(CanChiForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(CanChiForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(CanChiForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(CanChiForm.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new CanChiForm().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JList<String> ListData;
     private javax.swing.JButton btTinh;
-    private javax.swing.JLabel laYear;
-    private javax.swing.JLabel lbKQ;
-    private javax.swing.JTextField txtKq;
-    private javax.swing.JTextField txtYear;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lbKetQua;
+    private javax.swing.JLabel lbLaiSuat;
+    private javax.swing.JLabel lbSoTien;
+    private javax.swing.JLabel lbThoiHan;
+    private javax.swing.JTextField txtLaiSuat;
+    private javax.swing.JTextField txtSoTien;
+    private javax.swing.JTextField txtThoiHan;
     // End of variables declaration//GEN-END:variables
 }
