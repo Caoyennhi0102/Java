@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author SPC
+ * @author PC
  */
 public class CanChiForm extends javax.swing.JFrame {
 
@@ -28,13 +28,10 @@ public class CanChiForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lbSoTien = new javax.swing.JLabel();
-        txtSoTien = new javax.swing.JTextField();
-        lbThoiHan = new javax.swing.JLabel();
-        txtThoiHan = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        lbLaiSuat = new javax.swing.JLabel();
-        txtLaiSuat = new javax.swing.JTextField();
+        lbYearStart = new javax.swing.JLabel();
+        txtYearStart = new javax.swing.JTextField();
+        lbEndYear = new javax.swing.JLabel();
+        txtEndYear = new javax.swing.JTextField();
         lbKetQua = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         ListData = new javax.swing.JList<>();
@@ -42,13 +39,11 @@ public class CanChiForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lbSoTien.setText("Số Tiền: ");
+        lbYearStart.setText("Năm Bắt Đầu:");
 
-        lbThoiHan.setText("Thời Hạn ");
+        lbEndYear.setText("Năm Kết Thúc: ");
 
-        lbLaiSuat.setText("Lãi Suất ");
-
-        lbKetQua.setText("Kết Quả");
+        lbKetQua.setText("Kết Quả: ");
 
         ListData.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -69,58 +64,43 @@ public class CanChiForm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lbSoTien)
-                                .addComponent(lbThoiHan))
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(jLabel1)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                            .addComponent(lbLaiSuat)
-                            .addGap(29, 29, 29)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(lbKetQua)
-                        .addGap(37, 37, 37)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtSoTien)
-                    .addComponent(txtThoiHan)
-                    .addComponent(txtLaiSuat, javax.swing.GroupLayout.DEFAULT_SIZE, 135, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1))
-                .addGap(40, 40, 40)
-                .addComponent(btTinh)
-                .addContainerGap(68, Short.MAX_VALUE))
+                        .addComponent(lbKetQua, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lbEndYear)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtEndYear))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lbYearStart, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtYearStart, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
+                        .addComponent(btTinh)))
+                .addGap(41, 41, 41))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbSoTien)
-                    .addComponent(txtSoTien, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbYearStart)
+                    .addComponent(txtYearStart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(lbThoiHan)
-                    .addComponent(txtThoiHan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbLaiSuat)
-                    .addComponent(txtLaiSuat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(lbEndYear)
+                    .addComponent(txtEndYear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btTinh))
+                .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lbKetQua)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btTinh))
-                        .addGap(0, 20, Short.MAX_VALUE))))
+                    .addComponent(lbKetQua)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         pack();
@@ -128,41 +108,30 @@ public class CanChiForm extends javax.swing.JFrame {
 
     private void btTinhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTinhActionPerformed
         // TODO add your handling code here:
-        double SoTien, LaiSuat , lai;
-        int ThoiHan;
-       
+        int YearStart, EndYear, NumberYear;
+        String can [] = {"canh","tan", "nham","quy", "giap", "at", "binh", "dinh", "mau", "ky"};
+        String Chi [] = {"than", "dau", "tuat", "hoi","ty","suu", "dan", "mao", "thin", "ti","ngo","mui"};
+        
         
         try{
-             SoTien = Double.parseDouble(txtSoTien.getText());
-             LaiSuat = Double.parseDouble(txtLaiSuat.getText());
-             ThoiHan = Integer.parseInt(txtThoiHan.getText());
-            
+            YearStart = Integer.parseInt(txtYearStart.getText());
+            EndYear = Integer.parseInt(txtEndYear.getText());
         }catch(Exception e){
-           JOptionPane.showMessageDialog(null, "Enter a valid Number");
-                return;                   
-        } 
-        int SoNam = 2024 + ThoiHan;
-        String listdata[] = new String[SoNam + 1];
-        for(int i = 1; i < ThoiHan; i++){
-            lai = LaiSuat * SoTien;
-           listdata[i] = SoNam + ":" + "SoTien: " + SoTien + "Lãi: " + lai ;
-           SoTien = SoTien + lai;
-               
-
+            JOptionPane.showMessageDialog(null, "Number Value", "SORY", JOptionPane.ERROR_MESSAGE);
+            return;
         }
-        ListData.setListData(listdata);
-         
-            
-            
         
-        }
-          
+       NumberYear = EndYear - YearStart;
+       String listData[] = new String[NumberYear + 1];
        
-         
+       for(int i = 1; i < listData.length; i++){
+           int n = YearStart + i;
+           
+           listData[i] = "Year: " + n + ": " + can[n %10] + Chi[n%12];
+       }
+       ListData.setListData(listData);
         
         
-        
-       
     }//GEN-LAST:event_btTinhActionPerformed
 
     /**
@@ -203,14 +172,11 @@ public class CanChiForm extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JList<String> ListData;
     private javax.swing.JButton btTinh;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lbEndYear;
     private javax.swing.JLabel lbKetQua;
-    private javax.swing.JLabel lbLaiSuat;
-    private javax.swing.JLabel lbSoTien;
-    private javax.swing.JLabel lbThoiHan;
-    private javax.swing.JTextField txtLaiSuat;
-    private javax.swing.JTextField txtSoTien;
-    private javax.swing.JTextField txtThoiHan;
+    private javax.swing.JLabel lbYearStart;
+    private javax.swing.JTextField txtEndYear;
+    private javax.swing.JTextField txtYearStart;
     // End of variables declaration//GEN-END:variables
 }

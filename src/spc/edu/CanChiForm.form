@@ -23,106 +23,77 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="lbSoTien" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="lbThoiHan" alignment="0" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="8" max="32767" attributes="0"/>
-                          <Component id="lbLaiSuat" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
-                      </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="lbKetQua" min="-2" pref="81" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="lbKetQua" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lbEndYear" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtEndYear" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="lbYearStart" min="-2" pref="83" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="txtYearStart" min="-2" pref="140" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="52" max="32767" attributes="0"/>
+                      <Component id="btTinh" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="txtSoTien" max="32767" attributes="0"/>
-                  <Component id="txtThoiHan" max="32767" attributes="0"/>
-                  <Component id="txtLaiSuat" pref="135" max="32767" attributes="0"/>
-                  <Component id="jScrollPane1" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-              <Component id="btTinh" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="68" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbSoTien" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtSoTien" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbYearStart" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtYearStart" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="lbThoiHan" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtThoiHan" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbLaiSuat" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtLaiSuat" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lbEndYear" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtEndYear" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="btTinh" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="lbKetQua" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jScrollPane1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="btTinh" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="0" pref="20" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="lbKetQua" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace pref="46" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="lbSoTien">
+    <Component class="javax.swing.JLabel" name="lbYearStart">
       <Properties>
-        <Property name="text" type="java.lang.String" value="S&#x1ed1; Ti&#x1ec1;n: "/>
+        <Property name="text" type="java.lang.String" value="N&#x103;m B&#x1eaf;t &#x110;&#x1ea7;u:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtSoTien">
+    <Component class="javax.swing.JTextField" name="txtYearStart">
     </Component>
-    <Component class="javax.swing.JLabel" name="lbThoiHan">
+    <Component class="javax.swing.JLabel" name="lbEndYear">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Th&#x1edd;i H&#x1ea1;n "/>
+        <Property name="text" type="java.lang.String" value="N&#x103;m K&#x1ebf;t Th&#xfa;c: "/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="txtThoiHan">
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-    </Component>
-    <Component class="javax.swing.JLabel" name="lbLaiSuat">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="L&#xe3;i Su&#x1ea5;t "/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="txtLaiSuat">
+    <Component class="javax.swing.JTextField" name="txtEndYear">
     </Component>
     <Component class="javax.swing.JLabel" name="lbKetQua">
       <Properties>
-        <Property name="text" type="java.lang.String" value="K&#x1ebf;t Qu&#x1ea3;"/>
+        <Property name="text" type="java.lang.String" value="K&#x1ebf;t Qu&#x1ea3;: "/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
